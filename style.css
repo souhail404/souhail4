@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Noto+Serif:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+    text-decoration: none;
+    list-style: none;   
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    max-width: 1400px;
+    margin: auto;
+    height: 200vh;
+    min-width: 279px;
+    min-height: 500px;
+    background: rgb(0,0,0);
+}
+/* ------------------------------------------------------------------------------------------ */
+/* -----------navigation bar styling start--------------*/
+nav{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+nav .container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    padding: 15px 0;
+    transition: all 0.7s ease;
+}
+nav .container.active{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-bottom: solid 1px white;
+}
+nav .container .menu{
+    display: none;
+    width: 50%;
+    transition: all 0.7s ease;
+}
+nav .container .menu.active{
+    display: flex;
+}
+nav .container .menu ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .container .menu ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .container .menu ul li a{
+    color: white;
+    padding: 4px 14px;
+    font-size: 1.1rem;
+    font-family: 'Urbanist',sans-serif;
+}
+nav .container .hamburger{
+    height:22px;
+    width: 28px;
+    position: absolute;
+    padding: 1px;
+    cursor: pointer;
+    top: 15px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+nav .container .hamburger.cancel .bar1{
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+nav .container .hamburger.cancel .bar2{
+    display: none;
+}
+nav .container .hamburger.cancel .bar3{
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+nav .container .hamburger .bar1 ,nav .container .hamburger .bar3{
+    transition: all 0.3s ease;
+}
+nav .container .hamburger .bar2{
+    background-color: #da8600;
+}
+nav .container .hamburger span{
+    height:2px;
+    width: 28px;
+    background-color: white;
+}
+.flc{
+    color:#da8600; 
+}
+/* -----------navigation bar styling end--------------*/
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* ----------- home section styling start--------------*/
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    padding-top: 70px;
+    min-height:500px ;
+    
+}
+.home .container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    /* justify-content: ; */
+}
+
+.home .container .text{
+    width: 55%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.home .container .text p{
+    transform: rotate(-0deg);
+    margin-bottom: 60px;
+}
+.home .container .text .p{
+    font-size: 2rem;
+}
+.home .container .text .job{
+    font-size: 2.5rem;
+    color: #da8600;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    font-weight: 600;
+}
+.cursor{
+    display: inline-block;
+    background-color: #da8600d3;
+    width: 3px;
+    font-size: 2.35rem;
+    margin-left: 0.05rem;
+    margin-right: 0.3rem;
+    animation: cursor 1s infinite;
+}
+.typing{
+    animation: none;
+}
+
+.home .container .text p .name{
+    font-size: 3rem;
+    color: #da8600;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+}
+.home .container .text .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.home .container .text .button a{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color:transparent;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Quicksand' ,sans-serif;
+    transform: rotate(-20deg);
+    border: solid 1px #fafafa;
+    transition: all 0.5s ease;
+    animation: btn 4s infinite;
+}
+.home .container .text .button a:hover{
+    animation: none;
+}
+
+.home .container img{
+    width: 400px;
+    transform: rotate(5deg);
+}
+.home .container .social-media{
+    width: 100%;
+    display: flex;
+
+}
+.home .container .social-media ul{
+    display: flex;
+    align-items: baseline;
+    position: absolute;
+    bottom: 20px;
+}
+.home .container .social-media ul li{
+    margin:0 20px;
+    
+}
+.home .container .social-media ul li i{
+    color: #da8600;
+    font-size: 1.2rem;
+}
+
+/* --------------------- */
+
+.home .container2{
+    display: none;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.home .container2 .text{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.home .container2 .imbt{
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+}
+.home .container2 .image .helper{
+     height: 100%;
+     display: flex;
+     align-items: flex-start;
+}
+.home .container2 img{
+    width: 350px;
+    transform: rotate(5deg);
+    
+}
+.home .container2 .text p .name{
+    font-size: 2.5rem;
+    color: #da8600;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+}
+.home .container2 .text p{
+    transform: rotate(-0deg);
+    margin-bottom: 60px;
+    margin-left: 10%;
+}
+.home .container2 .text .p{
+    font-size: 1.9rem;
+}
+.home .container2 .text .job2{
+    font-size: 2rem;
+    color: #da8600;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    font-weight: 600;
+}
+.home .container2  .button {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+.home .container2  .button a{
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color:transparent;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-family: 'Quicksand' ,sans-serif;
+    transform: rotate(-20deg);
+    border: solid 1px #fafafa;
+    transition: all 0.5s ease;
+    animation: btn 4s infinite;
+}
+.home .container2 .social-media{
+    width: 100%;
+    display: flex;
+
+}
+.home .container2 .social-media ul{
+    display: flex;
+    align-items: baseline;
+    position: absolute;
+    bottom: 20px;
+}
+.home .container2 .social-media ul li{
+    margin:0 20px;
+    
+}
+.home .container2 .social-media ul li i{
+    color: #da8600;
+    font-size: 1.2rem;
+}
+
+
+.home .container3{
+    display: none;
+    height: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home .container3 .text{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.home .container3 .image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.home .container3 img{
+    width: 280px;
+    transform: rotate(0deg);
+    
+}
+.home .container3 .text p .name{
+    font-size: clamp(1.4rem , 7.8vw , 2.5rem);
+    color: #da8600;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+}
+.home .container3 .text p{
+    transform: rotate(-0deg);
+    margin-bottom: 60px;
+    margin-left: 10%;
+}
+.home .container3 .text .p{
+    font-size: clamp(1rem , 6.2vw , 1.5rem);
+}
+.home .container3 .text .job3{
+    font-size: clamp(1.2rem , 7vw , 1.5rem);
+    
+    color: #da8600;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    font-weight: 600;
+}
+.home .container3  .button {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0%;
+    padding-top: 10px;
+}
+.home .container3  .button a{
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color:transparent;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-family: 'Quicksand' ,sans-serif;
+    transform: rotate(-20deg);
+    border: solid 1px #fafafa;
+    transition: all 0.5s ease;
+    animation: btn 4s infinite;
+}
+.container3 .cursor{
+        display: inline-block;
+        background-color: #da8600d3;
+        width: 3px;
+        font-size: clamp(1.3rem , 7vw , 1.6rem);
+        margin-left: 0rem;
+        margin-right: 0.3rem;
+        animation: cursor 1s infinite;
+}
+.home .container3 .social-media{
+    width: 100%;
+    display: flex;
+
+}
+.home .container3 .social-media ul{
+    display: flex;
+    align-items: baseline;
+    position: absolute;
+    bottom: 20px;
+}
+.home .container3 .social-media ul li{
+    margin:0 10px;
+    
+}
+.home .container3 .social-media ul li i{
+    color: #da8600;
+    font-size: 1rem;
+}
+/* ----------- home section styling end--------------*/
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* -----------navigation bar responsive start--------------*/
+@media (max-width:860px) {
+    nav .container{
+        justify-content: flex-start;
+    }
+    nav .container .menu{
+        width: 80%;
+    }
+}
+@media (max-width:540px) {
+    nav .container .menu{
+        width: 80%;
+    }
+    nav .container .hamburger{
+        right: 20px;
+    }
+}
+@media (max-width:440px) {
+    nav .container .hamburger{
+        right: 10px;
+        top: 13px;
+    }
+    nav .container .hamburger span{
+        width: 24px;
+    }
+    nav .container .menu ul li a{
+        padding: 4px 8px;
+        font-size: 1rem;
+    }
+}
+@media (max-width:380px) {
+    nav .container .menu{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    } 
+    nav .container .menu ul{
+        height: 70%;
+        flex-direction: column;
+    } 
+    nav .container .menu ul li a{
+        font-size: 2.1rem;
+    }
+    nav .container .hamburger{
+        right: 15px;
+        top: 15px;
+    }
+    nav .container .hamburger span{
+        width: 26px;
+    }
+}
+/* -----------navigation bar responsive end--------------*/
+/* ------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------------ */
+/* -----------home section responsive start--------------*/
+@media (max-width:970px) {
+    .home .container .text .p{
+        font-size: 1.5rem;
+    }
+    .home .container .text .job{
+        font-size: 2rem;
+    }
+    .cursor{
+        display: inline-block;
+        font-size: 2.1rem;
+    }
+    .home .container .text p .name{
+        font-size: 2.5rem;
+    }
+    .home .container img{
+        width: 380px;
+        transform: rotate(5deg);
+    }
+}
+@media (max-width:875px) {
+    .home .container{
+        align-items:center;
+        justify-content: space-around;
+    }
+    
+    .home .container .text .p{
+        font-size: 1.5rem;
+    }
+    .home .container .text .job{
+        font-size: 1.7rem;
+    }
+    
+    .home .container .text p .name{
+        font-size: 2rem;
+    }
+    
+    .home .container .text .button a{
+        width: 70px;
+        height: 70px;  
+    }
+    .cursor{
+        display: inline-block;
+        font-size: 1.7rem;
+    }
+    .home .container img{
+        width: 300px;
+    }
+}
+@media (max-width:770px) {
+       .home .container{
+           display: none;
+       }
+       .home .container2{
+           display: flex;
+       }
+} 
+@media (max-width:575px) {
+    .home .container2 img{
+        width: 330px;
+        transform: rotate(6deg);
+    }
+} 
+@media (max-width:510px) {
+    .home .container2 {
+        display: none;
+    }
+    .home .container3 {
+        display: flex;
+    }
+    .home{
+        padding-top: 60px;
+    }
+} 
+/* -----------home section responsive end--------------*/
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes btn {
+    0%{
+        transform: rotate(-20deg);
+    }
+    30%{
+        transform: rotate(-20deg);
+    }
+    50%{
+        transform: rotate(-380deg);
+    }
+    70%{
+        transform: rotate(-380deg);
+    }
+    
+    100%{
+        transform: rotate(-380deg);
+    }
+    
+} 
+ @keyframes cursor {
+    0%{
+        background-color: #da8600;
+    }
+    49%{
+        background-color: #da8600;
+    }
+    50%{
+        background-color: black ;
+    }
+    99%{
+        background-color: black;
+    }
+    100%{
+        background-color: #da8600;
+    }
+} 
