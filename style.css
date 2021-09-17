@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Noto+Serif:wght@700&display=swap');
 *{
     padding: 0;
@@ -441,8 +442,217 @@ nav .container .hamburger span{
 
 
 
+/* ------------------------------------------------------------------------------------------ */
+/* ----------- about section styling start--------------*/
+.about{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about .header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.about .header p{
+    color:white;
+    font-family: 'quicksand' ,sans-serif;
+    font-size: 2rem;
+    position: absolute;
+    top: 59px;
+    text-shadow: -5px 0px 2px #da8600c2;
+    z-index: 998;
+    opacity: .8;
+}
+
+.about .container{
+    width: 99%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about .container .left{
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .container .left img{
+    width: 320px;
+    opacity: 0.8;
+}
+.about .container .right{
+    width: 50%;
+    padding-right: 30px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+.about .container .right h2{
+    color: #da8600;
+    font-size: clamp(1.8rem , 3.2vw , 2.6rem);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: .5px;
+}
+.about .container .right h2 .n4{
+    animation: name 2s infinite;
+    animation-delay: 2s;
+}
+.about .container .right h2 .n3{
+    animation: name 2s infinite;
+    animation-delay: 1.5s;
+}
+.about .container .right h2 .n2{
+    animation: name 2s infinite;
+    animation-delay: 1s;
+}
+.about .container .right h2 .n1{
+    animation: name 2s infinite;
+    animation-delay: 0.5s;
+}
+
+.about .container .right p{
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: 'Quicksand',sans-serif;
+    font-size: 1.05rem;
+}
+.about .container .right .hp{
+    color: #ffffff;
+    margin-top: 0px;
+    font-family: 'Quicksand',sans-serif;
+    font-size:clamp(1.8rem , 27vw , 2.2rem) ;
+}
+.about .container .right .button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+.about .container .right .button a{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color:transparent;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-family: 'Quicksand' ,sans-serif;
+    transform: rotate(20deg);
+    border: solid 1px #fafafa;
+    transition: all 0.5s ease;
+    animation: btn2 4s infinite;
+    margin-right: 20%;
+}
 
 
+
+
+.about .container2{
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.about .container2 .left{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.about .container2 .left img{
+    height: 140%;
+    opacity: 0.62;
+    z-index: -1;
+}
+.about .container2 .right{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5px;
+    padding-top: 20px;
+}
+.about .container2 .right h2{
+    color: #da8600;
+    font-size: 1.7rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: .5px;
+}
+.about .container2 .right h2 .n4{
+    animation: name 2s infinite;
+    animation-delay: 2s;
+}
+.about .container2 .right h2 .n3{
+    animation: name 2s infinite;
+    animation-delay: 1.5s;
+}
+.about .container2 .right h2 .n2{
+    animation: name 2s infinite;
+    animation-delay: 1s;
+}
+.about .container2 .right h2 .n1{
+    animation: name 2s infinite;
+    animation-delay: 0.5s;
+}
+
+.about .container2 .right p{
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: 'Quicksand',sans-serif;
+    font-size: 1rem;
+}
+.about .container2 .right .hp{
+    color: #ffffff;
+    margin-top: 0px;
+    font-family: 'Quicksand',sans-serif;
+    font-size:1.3rem;
+}
+.about .container2 .right .button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.about .container2 .right .button a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color:transparent;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-family: 'Quicksand' ,sans-serif;
+    transform: rotate(20deg);
+    border: solid 1px #fafafa;
+    transition: all 0.5s ease;
+    animation: btn2 4s infinite;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+/* ----------- about section styling end--------------*/
+/* ------------------------------------------------------------------------------------------ */
 
 
 
@@ -595,6 +805,140 @@ nav .container .hamburger span{
 
 
 
+/* ------------------------------------------------------------------------------------------ */
+/* -----------about section responsive start--------------*/
+@media (max-width:935px) {
+    .about .header p{
+        font-size: 2rem;
+    }
+    
+    .about .container{
+        width:100%;
+    }
+    .about .container .left img{
+        width: 270px;
+    }
+    .about .container .right{
+        padding-right: 25px;
+        padding-top:80px;    
+    }
+    .about .container .right p{
+        font-size: 0.95rem;
+    }
+    .about .container .right .hp{
+        font-size:1.8rem ;
+    }
+    .about .container .right .button a{
+        width: 70px;
+        height: 70px;
+    }
+}
+@media (max-width:725px) {
+    .about .header p{
+        font-size: 1.9rem;
+    }
+    .about .container .left img{
+        width: 250px;
+    }
+    .about .container .right{
+        padding-right: 20px;
+    }
+    .about .container .right p{
+        font-size: 0.9rem;
+    }
+    .about .container .right .hp{
+        font-size:1.5rem ;
+    }
+    .about .container .right .button a{
+        width: 60px;
+        height: 60px;
+    }
+}
+@media (max-width:630px) {
+    .about .header p{
+        font-size: 1.9rem;
+    }
+    .about .container .left img{
+        width: 250px;
+    }
+    .about .container .right h2{
+        font-size: 1.6rem;
+    }
+    .about .container .right{
+        padding-right: 20px;
+    }
+    .about .container .right p{
+        font-size: 0.9rem;
+    }
+    .about .container .right .hp{
+        font-size:1.35rem ;
+    }
+    
+}
+@media (max-width:630px) {
+    .about .container .left img{
+        width: 350px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        opacity: 0.3;
+    }
+    .about .container .left{
+        width: 5%;
+    }
+    .about .container {
+       height: 85vh;
+       align-items: flex-end;
+       padding-bottom: 30px;
+    }
+    .about .container .right{
+        width: 100%;
+        z-index: 1;
+    }
+    .about .container .right h2{
+        font-size: 2.2rem;
+        -webkit-text-stroke-width: 1.3px;
+    }
+    .about .container .right{
+        padding-right: 5px;
+    }
+    .about .container .right p{
+        font-size: 1rem;    }
+    .about .container .right .hp{
+        font-size:1.45rem ;
+    }
+    .about .container .right .button{
+        padding-top: 5px;
+    }
+}
+@media (max-width:420px) {
+    .about .container{
+        display: none;
+
+    }
+    .about .container2 {
+        display: flex;
+    }
+    
+}
+@media (max-width:365px) {
+    .about .container2 .right p{
+        
+        font-size: 0.85rem;
+    }
+    .about .container2 .right .hp{
+        font-size:1rem;
+    }
+}
+
+
+
+/* -----------about section responsive end--------------*/
+/* ------------------------------------------------------------------------------------------ */
+
+
+
 
 
 
@@ -622,6 +966,25 @@ nav .container .hamburger span{
     }
     
 } 
+@keyframes btn2 {
+    0%{
+        transform: rotate(20deg);
+    }
+    30%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: rotate(380deg);
+    }
+    70%{
+        transform: rotate(380deg);
+    }
+    
+    100%{
+        transform: rotate(380deg);
+    }
+    
+} 
  @keyframes cursor {
     0%{
         background-color: #da8600;
@@ -637,5 +1000,16 @@ nav .container .hamburger span{
     }
     100%{
         background-color: #da8600;
+    }
+} 
+@keyframes name {
+    0%{
+        
+        -webkit-text-stroke-width: 1.3px;
+    }
+    
+    100%{
+    
+        -webkit-text-stroke-width: 0.8px;
     }
 } 
